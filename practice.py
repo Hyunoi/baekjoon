@@ -1,11 +1,13 @@
 import sys
 
-num = int(sys.stdin.readline().strip())
-
+num = int(sys.stdin.readline())
 nlist = []
+
 for i in range(num):
-    nlist.append(int(sys.stdin.readline().strip()))
+    x, y = map(int, sys.stdin.readline().split())
+    nlist.append([x, y])
 
 nlist.sort()
+
 for i in range(num):
-    print(nlist[i])
+    print(nlist[i][0], nlist[i][1])

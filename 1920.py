@@ -1,11 +1,12 @@
 import sys
 
+# 1
 nnum = int(input())
-nlist = list(map(int, sys.stdin.readline().split()))
+nlist = set(map(int, sys.stdin.readline().split()))
 
 mnum = int(input())
 mlist = list(map(int, sys.stdin.readline().split()))
-
+ 
 for i in mlist:
     if i in nlist:
         print(1)
